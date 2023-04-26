@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mpesantezExamen.Resumen">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="LightBlue" Spacing="15">
+            <Label Text="Resumen" FontSize="30" HorizontalTextAlignment="Center" TextColor="White" BackgroundColor="DarkBlue"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Usuario Conectado: " FontSize="20" HorizontalTextAlignment="End" Grid.Row="0" Grid.Column="0"/>
+                <Label x:Name="lblUsuario" FontSize="20" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="1"/>
+            </Grid>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Nombre:" FontSize="17" HorizontalTextAlignment="Center" Grid.Column="0" Grid.Row="0" VerticalTextAlignment="Center"/>
+                <Label x:Name="lblNombre" FontSize="17" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Grid.Row="0" Grid.Column="1"/>
+
+                <Label Text="Monto Inicial:" FontSize="17" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Grid.Column="0" Grid.Row="1"/>
+                <Label x:Name="lblMinicial" FontSize="17" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Grid.Row="1" Grid.Column="1"/>
+
+                <Label Text="Pago Mensual:" FontSize="17" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Grid.Column="0" Grid.Row="2"/>
+                <Label x:Name="lblPagoMensual" FontSize="17" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Grid.Row="2" Grid.Column="1"/>
+
+                <Label Text="TOTAL:" FontSize="17" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Grid.Column="0" Grid.Row="3"/>
+                <Label x:Name="lblTotal" FontSize="17" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Grid.Row="3" Grid.Column="1"/>
+                
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
